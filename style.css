@@ -1,0 +1,28 @@
+/* Fuente general y estilos de fondo */
+body { /* selector del cuerpo del documento (aplica a toda la página) */
+  margin: 0; /* elimina el margen por defecto del navegador */
+  padding: 0; /* elimina el padding por defecto del navegador */
+  font-family: Arial, Helvetica, sans-serif; /* define la tipografía principal, con alternativas */
+  color: white; /* color de texto por defecto: blanco */
+  text-align: center; /* centra el texto horizontalmente dentro de los elementos en línea */
+
+  /* Imagen de fondo estilo fútbol */
+  background-image: url("https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg"); /* establece la imagen de fondo usando una URL */
+  background-size: cover; /* hace que la imagen cubra todo el área disponible, recortando si es necesario */
+  background-position: center; /* centra la imagen de fondo en el eje X e Y */
+  background-attachment: fixed; /* fija la imagen para que no se mueva al hacer scroll */
+
+  /* Oscurecer un poco para que el texto se vea mejor */
+  background-color: rgba(0, 0, 0, 0.5); /* color de fondo semitransparente encima/abajo de la imagen (negro con 50% opacidad) */
+  background-blend-mode: darken; /* mezcla el color con la imagen usando el modo 'darken' para oscurecerla */
+} /* fin de las reglas para body */
+
+/* Contenedor principal centrado */
+main { /* selector para el elemento <main> (contenedor principal de tu contenido) */
+  max-width: 900px; /* ancho máximo del contenedor: 900px; en pantallas más grandes no crecerá más */
+  margin: auto; /* centra el contenedor horizontalmente (top/bottom automáticos) */
+  padding: 20px; /* espacio interior alrededor del contenido dentro del contenedor */
+  background: rgba(0, 0, 0, 0.45); /* fondo semitransparente del contenedor para mejorar lectura (negro 45% opacidad) */
+  border-radius: 15px; /* bordes redondeados del contenedor (15px de radio) */
+  backdrop-filter: blur(4px); /* desenfoque del fondo detrás del contenedor (efecto glass/vidrio) */
+} /* fin de las reglas para main */
